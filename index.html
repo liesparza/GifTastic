@@ -1,0 +1,76 @@
+<html>
+<head>
+
+    <title>GifTastic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+
+
+</head>
+
+
+
+
+<body>
+
+<div class="container">
+ <h1>GifTastic</h1>
+
+    <!-- We'll be dumping our buttons here -->
+    <div id="giphy-buttons"></div>
+
+
+    <!-- Giphy creating form buttons -->
+
+ <form id="giphy-form">
+        <label for="giphy-input">Add a New Gif</label>
+        <input type="text" id="giphy-input"><br>
+  
+        <!-- This button will trigger our AJAX call -->
+        <input id="add-giphy" type="submit" value="Gif Add">
+      </form>
+
+ 
+    <!-- Giphy display -->
+
+<div>
+        <table class="table">
+                <thead>
+                  <tr>
+                    -- The scope attribute specifies that this is a header for a column --
+                    <th scope="col">Gif</th>
+                    <th scope="col">Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td  id="gifs-view"></td>
+                    <td id="rating"></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+
+
+
+</div>
+
+
+
+</div>    
+
+<footer></footer>
+
+<script> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/giphy.js"></script>
+
+
+</body>
+
+
+
+
+</html>
